@@ -1,0 +1,13 @@
+        //个人中心 我的牛财选项
+        $(".navitems li").click(function () {
+            $(this).attr('id', 'navDraw').siblings().attr('id', ' ');
+            $(".left div").hide().eq($(this).index()).show();
+            var gCookie = $.cookie("navigate", $(this).index(), { expires: 365 });
+        });
+        var gCookie = $.cookie("navigate");
+        if (gCookie != null) {
+            $(".navitems li").eq(gCookie).attr('id', 'navDraw').siblings().attr('id', ' ');
+            $(".left div").hide().eq(gCookie).show();
+        }
+
+走刚
