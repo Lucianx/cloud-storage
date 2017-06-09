@@ -1,0 +1,4 @@
+SweetAlert-js  ²å¼þ
+
+window.parent.location.reload();
+

@@ -1,0 +1,56 @@
+<script type="text/javascript">
+    
+	window.Module_Name = ["cart"];
+
+</script> 			
+
+<script id="XXX" type="text/html">
+
+
+
+razor 语法
+
+
+transform 标签
+
+
+
+lls
+
+
+directive    angular 自定义指令
+
+
+
+压缩  npm 
+
+lls
+
+SourceTree  用法
+
+
+tmod		模板预编译
+
+
+npm		各种			readOnly="true"
+
+
+template('area', ret.house);     template.js
+
+
+http://www.cnblogs.com/gamedaybyday/p/6373312.html
+
+
+bundler  minifier   vs插件   自动转换app.min 格式
+
+
+自适应
+
+seo
+
+
+http://blog.csdn.net/u012230055/article/details/64125268
+
+http://blog.csdn.net/qq_32365567/article/details/52859166
+
+ajax 无刷新加载页面
