@@ -5,6 +5,3 @@
 	text-indent 属性		
 	数组字符串
 	http://www.jb51.net/article/82519.htm   获取地址值
-2017-6-21
-	正则 过滤 空格 		data = data.replace(/^\s*|\s*$/,'')
-	js 跳转页面
