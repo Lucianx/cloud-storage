@@ -1,0 +1,29 @@
+ var tabMenu = new $.TabMenu({ anchor: "#left-nav a", content: ".nav-body-item" });
+
+$.TabMenu = function (options) {
+        if (!options.anchor || !options.content) {
+            console.error("必须提供anchor和content参数");
+            return;
+        }
+        this.tabTimer = null;
+        this._clear = function () {
+            this.tabTimer && clearTimeout(this.tabTimer);
+        }
+        this._setTimer = function () {
+            this.tabTimer = setTimeout(function () {
+                $(options.content).hide();
+            }, 50);
+        }
+        var self = this;
+        $(options.anchor).mouseover(function () {
+            self._clear();
+            $(options.content).hide();
+            $("#" + $(this).attr("tab")).show();
+        }).mouseout(function () {
+            self._setTimer();
+        });
+        $(options.content).mouseover(function () {
+            self._clear();
+        }).mouseout(function () {
+            self._setTimer();
+        });
