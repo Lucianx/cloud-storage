@@ -1,0 +1,7 @@
+var a =[{"╧Ч╧Ч":"1"},{"ю╡ю╡":"2"},{"ебеб":"3"}];
+	for( var i=0; i<a.length; i++){
+		for(name in a[i]){
+			console.log(a[i][name]);
+			alert((a[i][name]));
+		}
+	}
