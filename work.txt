@@ -17,3 +17,13 @@
 
 2017-6-23
 	json：http://www.cnblogs.com/chenhuzi/p/javascrpt-json2-json-add-update-delete.html
+
+2017-6-26
+	width:120px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;     //溢出变为。。。
+2017-6-27
+	strthickness[pro] = paramthickness.toString();
+	json 怎么变为string + mm
+
