@@ -26,4 +26,23 @@
 2017-6-27
 	strthickness[pro] = paramthickness.toString();
 	json 怎么变为string + mm
+2017-6-28 
+	mui webview :http://www.html5plus.org/doc/zh_cn/webview.html
 
+	$.extend()    /* object2 合并到 object1 中 */
+	var providers = [{
+				ProviderId: 0,
+				ProviderName: '全部'
+			}].concat(data);
+
+	concat() 方法用于连接两个或多个字符串。
+
+2017-6-29
+	虚拟键盘输入与position：fixed的冲突解决
+	http://blog.csdn.net/asuncat/article/details/52084466
+	设置属性 
+	XX.setStyle({mask: "rgba(0,0,0,0.5)"
+
+	map 遍历   定时器
+
+	http://www.haorooms.com  前端资料库
