@@ -51,3 +51,5 @@
 	修改收货地址
 	挂起 签入  没有
 	json
+2017-7-5
+	pullRefresh.query();
