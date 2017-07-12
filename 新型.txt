@@ -1,0 +1,56 @@
+SweetAlert-js  插件
+
+window.parent.location.reload();
+
+cursor其他取值  
+auto                    ：标准光标  
+default                 ：标准箭头  
+pointer, hand                   ：手形光标  
+wait                     ：等待光标  
+text                      ：I形光标  
+vertical-text          ：水平I形光标  
+no-drop                ：不可拖动光标  
+not-allowed           ：无效光标  
+help                     ：帮助光标  
+all-scroll         ：三角方向标  
+move                     ：移动标  
+crosshair           ：十字标  
+e-resize  
+n-resize  
+nw-resize  
+w-resize  
+s-resize  
+se-resize  
+sw-resize
+
+
+width:75%;
+word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+
+//回到顶部cookie
+if ($.cookie("gotop") == 1) {
+            $(".ui-float").css("right", "-80px");
+            $(".ui-float-new").show();
+        } else {
+            $(".ui-float").css("right", "0");
+            $(".ui-float-new").hide();
+        }
+
+
+规定属于其父元素的第二个子元素的每个 p 的背景色：
+p:nth-child(2)
+{
+background:#ff0000;
+}
+
+不满一行 自动换行
+white-space: nowrap;
+
+.red { color: #f00 !important; }
+
+
+
+

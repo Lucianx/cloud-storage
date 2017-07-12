@@ -1,3 +1,5 @@
+filter.filters[key][val]
+
 2017-6-16
 	定时器  选项卡
 2017-6-19
@@ -53,3 +55,11 @@
 	json
 2017-7-5
 	pullRefresh.query();
+2017-7-6 
+	cookie
+2017-7-12
+	vs 查看service实线层插件
+
+	
+	   排序   升序
+	***query.OrderBys.Add(Customer_.CustomerAccount.Balance.Asc);   
