@@ -63,3 +63,6 @@ filter.filters[key][val]
 	
 	   排序   升序
 	***query.OrderBys.Add(Customer_.CustomerAccount.Balance.Asc);   
+
+2017-7-13
+	数据库  上传照片

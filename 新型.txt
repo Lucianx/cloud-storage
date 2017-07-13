@@ -51,6 +51,10 @@ white-space: nowrap;
 
 .red { color: #f00 !important; }
 
+TEqual
+
+query.ReturnMatchedCount = true;
+
 
 
 
