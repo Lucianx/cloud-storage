@@ -56,5 +56,6 @@ TEqual
 query.ReturnMatchedCount = true;
 
 
+text-indent:0;
 
-
+border-left: 2px solid transparent;
