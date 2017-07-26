@@ -100,3 +100,41 @@ $("[href='#']") 	所有 href 属性的值等于 "#" 的元素
 
 ajax
 cookie
+text-decoration: none;	下划线
+transform:rotate(30deg);旋转
+
+transition:width 2s;
+-webkit-transition:height 2s;	hover过度效果
+
+	target=_blank
+_blank -- 在新窗口中打开链接 
+_parent -- 在父窗体中打开链接 
+_self -- 在当前窗体打开链接,此为默认值 
+_top -- 在当前窗体打开链接，并替换当前的整个窗体(框架页) 
+
+
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);		焦点框提示、阴影
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	按钮阴影
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+
+	按钮禁用
+opacity: 0.6;
+cursor: not-allowed;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
