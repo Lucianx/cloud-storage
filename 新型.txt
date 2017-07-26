@@ -1,3 +1,16 @@
+$.lajax({
+                url: "/Cart/SaveBrandConsult",
+                params: { brandProductId: brandProductId, brandId: brandId },
+                callback: function (ret) {
+                    if (ret && ret.ret) {
+                        alert("已经收到您的询价需求,稍后将有人与您联系");
+                    } else {
+                        alert("网络异常,请重试");
+                    }
+                }
+            });
+
+
 SweetAlert-js  插件
 
 window.parent.location.reload();
@@ -59,3 +72,31 @@ query.ReturnMatchedCount = true;
 text-indent:0;
 
 border-left: 2px solid transparent;
+
+
+@Url.LAction  当前状态下的action
+
+
+<a href="@Url.LAction("Repayment","My", new { Days=-1 })">  Url 传参
+
+vertical-align
+
+transition：all 0.4s linear 0s 动
+
+比较时间
+ DateTime t1 = Convert.ToDateTime(date1);
+        DateTime t2 = Convert.ToDateTime(date2);
+        if (DateTime.Compare(t1, t2) > 0)
+        {
+            strErr += "截止日期必须在发布日期之后！"
+        }
+
+http://www.cnblogs.com/huaxingtianxia/p/5577150.html
+chart.js  博客
+
+jq  focus()		当输入框获得焦点时，改变它的背景色：
+
+$("[href='#']") 	所有 href 属性的值等于 "#" 的元素
+
+ajax
+cookie
