@@ -124,11 +124,16 @@ transition-duration: 0.4s;
 opacity: 0.6;
 cursor: not-allowed;
 
+网页缩小不会变形
+http://coupon.yhd.com/coupon/?tracker_u=12417&adgroupKeywordID=34877381&cp=0 
 
 
+取消绑定的hover事件的正确方式：
+	
+$('a').unbind('mouseenter').unbind('mouseleave');
 
 
-
+jQuery实现加入购物车飞入动画效果  xx.fly
 
 
 
