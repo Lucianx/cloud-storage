@@ -135,11 +135,24 @@ $('a').unbind('mouseenter').unbind('mouseleave');
 
 jQuery实现加入购物车飞入动画效果  xx.fly
 
+layui 弹出框
+
+
+spring-boot
+
+http://www.swiper.com.cn/   swiper 轮播图
+
+http://www.css88.com/doc/zeptojs_api/  zepotJs
+
+http://blog.csdn.net/it_talk/article/details/52448597   破解webstome
+
+http://blog.csdn.net/yuzhiqiang_1993/article/details/71191873  anjularjs
+
+
+.coupon .coupon-term li a:hover { text-shadow: 2px 2px 2px rgba(122, 204, 232, 0.50); }
+.boxShadow:hover { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); 四周
 
 
 
-
-
-
-
-
+update_batch   批量跟新
