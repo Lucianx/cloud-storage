@@ -1,0 +1,384 @@
+CREATE TABLE `customer` (
+  `CustomerId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CustomerName` varchar(50) NOT NULL,
+  `Mb` varchar(20) DEFAULT NULL,
+  `EmployeeId` bigint(20) NOT NULL,
+  `IsActive` bit(1) NOT NULL,
+  `Remark` varchar(1000) DEFAULT NULL,
+  `CustomerLevelId` bigint(20) DEFAULT NULL,
+  `CreateTime` datetime NOT NULL,
+  `UpdateTime` datetime NOT NULL,
+  `FinanceRemark` varchar(1000) DEFAULT NULL,
+  `CustomerTypeId` bigint(20) NOT NULL,
+  `RecommendId` bigint(20) DEFAULT NULL,
+  `LoginNo` varchar(50) NOT NULL,
+  `Password` varchar(50) NOT NULL,
+  `AdvLink` varchar(150) NOT NULL,
+  `MbConfirmed` bit(1) NOT NULL,
+  `RealConfirmStateId` bigint(20) DEFAULT NULL,
+  `ComapnyAddress` varchar(200) DEFAULT NULL,
+  `Phone` varchar(50) DEFAULT NULL,
+  `Fax` varchar(50) DEFAULT NULL,
+  `RegisterNo` varchar(50) DEFAULT NULL,
+  `OrgNo` varchar(50) DEFAULT NULL,
+  `TaxNo` varchar(50) DEFAULT NULL,
+  `PersonName` varchar(50) DEFAULT NULL,
+  `RecommendCount` bigint(20) NOT NULL,
+  `Email` varchar(100) DEFAULT NULL,
+  `QQ` varchar(50) DEFAULT NULL,
+  `TempAmount` decimal(21,4) DEFAULT NULL,
+  `ProviderId` bigint(20) DEFAULT NULL,
+  `Deleted` bit(1) NOT NULL DEFAULT b'0',
+  `CompanyId` varchar(50) NOT NULL DEFAULT '1' COMMENT '公司编号',
+  PRIMARY KEY (`CustomerId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1226 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `company` (
+  `CompanyId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CompanyNo` varchar(20) NOT NULL COMMENT '公司编号',
+  `CompanyName` varchar(50) NOT NULL COMMENT '公司名称',
+  `CreateId` bigint(20) NOT NULL,
+  `CreateTime` datetime NOT NULL,
+  `IsActive` bit(1) NOT NULL,
+  `Remark` varchar(128) NOT NULL,
+  PRIMARY KEY (`CompanyId`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='公司表';
+
+CREATE TABLE `customeraddress` (
+  `CustomerAddressId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CustomerAddressName` varchar(200) NOT NULL,
+  `ContactName` varchar(20) NOT NULL,
+  `Phone` varchar(20) NOT NULL,
+  `CustomerId` bigint(20) NOT NULL,
+  `IsDefault` bit(1) NOT NULL,
+  `ProvinceId` int(11) DEFAULT NULL COMMENT '省份 ',
+  `ProvinceName` varchar(16) DEFAULT NULL COMMENT '省份名称',
+  `CityId` int(11) DEFAULT NULL COMMENT '城市',
+  `CityName` varchar(16) DEFAULT NULL COMMENT '城市名称',
+  `CountyId` int(11) DEFAULT NULL COMMENT '区县',
+  `CountyName` varchar(16) DEFAULT NULL COMMENT '区县名称',
+  `CompanyId` varchar(50) NOT NULL DEFAULT '1' COMMENT '公司编号',
+  PRIMARY KEY (`CustomerAddressId`)
+) ENGINE=InnoDB AUTO_INCREMENT=529 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `customeradvancereceived` (
+  `CustomerAdvancesReceivedId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CustomerId` bigint(20) NOT NULL,
+  `Amount` decimal(20,6) NOT NULL,
+  `CreateTime` datetime NOT NULL,
+  `CapitalEmployeeId` bigint(20) NOT NULL,
+  `Remark` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`CustomerAdvancesReceivedId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='记录每一笔预收款';
+
+CREATE TABLE `customerbalance` (
+  `CustomerBalanceId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CustomerId` bigint(20) NOT NULL COMMENT '客户编号',
+  `Amount` decimal(21,2) NOT NULL COMMENT '金额',
+  `CreateId` bigint(20) NOT NULL COMMENT '创建人',
+  `CreateTime` datetime NOT NULL COMMENT '创建时间',
+  `ThenAmount` decimal(21,2) NOT NULL COMMENT '即时余额',
+  `AmountDirection` int(11) NOT NULL COMMENT '1：流入，2：流出',
+  `SourceType` int(11) NOT NULL COMMENT '来源类型',
+  `SourceId` bigint(20) DEFAULT NULL COMMENT '来源ID',
+  `AmountType` int(11) NOT NULL DEFAULT 2 COMMENT '账户类型(2,个人账户;4,白条账户)',
+  `Remark` varchar(200) NOT NULL COMMENT '备注',
+  `Deleted` bit(1) NOT NULL DEFAULT b'0' COMMENT '已删除',
+  `CustomerInvoiceId` bigint(20) DEFAULT 0 COMMENT '客户付款抬头',
+  PRIMARY KEY (`CustomerBalanceId`)
+) ENGINE=InnoDB AUTO_INCREMENT=6293 DEFAULT CHARSET=utf8 COMMENT='客户资金流水表';
+
+CREATE TABLE `customerinvoice` (
+  `CustomerInvoiceId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CompanyName` varchar(200) NOT NULL,
+  `FaxNo` varchar(50) NOT NULL,
+  `BankName` varchar(50) DEFAULT NULL,
+  `BankNo` varchar(50) DEFAULT NULL,
+  `Address` varchar(200) DEFAULT NULL,
+  `Phone` varchar(50) DEFAULT NULL,
+  `SendAddress` varchar(200) DEFAULT NULL,
+  `CustomerId` bigint(20) NOT NULL,
+  `IsDefault` bit(1) NOT NULL,
+  `Delegate` varchar(200) DEFAULT NULL,
+  `CreateTime` datetime DEFAULT NULL,
+  `UpLoadTime` datetime DEFAULT NULL,
+  `Balance` decimal(21,2) DEFAULT 0.00 COMMENT '可用余额',
+  `CompanyId` varchar(50) NOT NULL DEFAULT '1' COMMENT '公司编号',
+  PRIMARY KEY (`CustomerInvoiceId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1003 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `customerlevel` (
+  `CustomerLevelId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CustomerLevelName` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`CustomerLevelId`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `customerpay` (
+  `CustomerPayId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `Amount` decimal(21,2) NOT NULL,
+  `CustomerId` bigint(20) NOT NULL COMMENT '客户编号',
+  `CreateId` bigint(20) NOT NULL COMMENT '创建人',
+  `CreateTime` datetime NOT NULL COMMENT '创建时间',
+  `ReceiptImage` varchar(200) DEFAULT NULL COMMENT '水单图片路径',
+  `PaymentTypeId` bigint(20) NOT NULL COMMENT '付款方式',
+  `PaymentTypeName` varchar(50) NOT NULL COMMENT '支付方式名称',
+  `EmployeeId` bigint(20) DEFAULT NULL COMMENT '财务确认人',
+  `EmployeeName` varchar(50) DEFAULT NULL COMMENT '财务确认人',
+  `Remark` varchar(200) NOT NULL COMMENT '备注',
+  `CustomerBalanceId` bigint(20) NOT NULL DEFAULT 0,
+  `Deleted` bit(1) NOT NULL DEFAULT b'0' COMMENT '已删除',
+  `CustomerInvoiceId` bigint(20) DEFAULT 0 COMMENT '客户付款抬头',
+  PRIMARY KEY (`CustomerPayId`)
+) ENGINE=InnoDB AUTO_INCREMENT=2487 DEFAULT CHARSET=utf8 COMMENT='客户付款记录';
+
+CREATE TABLE `customerprofit` (
+  `CustomereId` bigint(20) NOT NULL,
+  `CustomerId` bigint(20) NOT NULL,
+  `Percent` decimal(10,4) DEFAULT NULL,
+  `EndTime` datetime DEFAULT NULL,
+  PRIMARY KEY (`CustomereId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `customerprofitdetail` (
+  `DetailsId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `ResultId` bigint(20) NOT NULL,
+  `SalesOrderId` bigint(20) NOT NULL,
+  `CustomerId` bigint(20) NOT NULL,
+  `OrderAmount` decimal(16,4) NOT NULL,
+  `ResultAmount` decimal(16,4) NOT NULL,
+  `CreateTime` datetime NOT NULL,
+  `State` int(11) NOT NULL,
+  PRIMARY KEY (`DetailsId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `customerprofitresult` (
+  `ResultId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CustomerId` bigint(20) NOT NULL,
+  `EmployeeId` bigint(20) DEFAULT NULL,
+  `LastResultTime` datetime DEFAULT NULL,
+  `Percent` decimal(10,4) DEFAULT NULL,
+  `Amount` decimal(16,4) DEFAULT NULL,
+  `TotalAmount` decimal(16,4) DEFAULT NULL,
+  `Payed` int(11) DEFAULT NULL,
+  `Operator` bigint(20) DEFAULT NULL,
+  `OperateTime` datetime DEFAULT NULL,
+  `PayAmount` decimal(16,4) DEFAULT NULL,
+  `Deleted` int(11) DEFAULT NULL,
+  `CreateTime` datetime DEFAULT NULL,
+  PRIMARY KEY (`ResultId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `customerrebate` (
+  `CustomerRebateId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CustomerId` bigint(20) NOT NULL,
+  `Amount` decimal(20,6) NOT NULL,
+  `EmployeeId` bigint(20) NOT NULL,
+  `CreateTime` datetime NOT NULL,
+  PRIMARY KEY (`CustomerRebateId`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `department` (
+  `DepartmentId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `DepartmentNo` varchar(20) NOT NULL,
+  `DepartmentName` varchar(20) NOT NULL,
+  `ParentDepartmentId` bigint(20) NOT NULL COMMENT ',0表示顶级',
+  `LeftSeed` int(11) NOT NULL,
+  `RightSeed` int(11) NOT NULL,
+  `ChildCount` int(11) NOT NULL,
+  `ChildCountAll` int(11) NOT NULL,
+  `IsActive` bit(1) NOT NULL,
+  `Description` varchar(100) DEFAULT NULL,
+  `CompanyId` varchar(50) NOT NULL DEFAULT '1' COMMENT '公司编号',
+  PRIMARY KEY (`DepartmentId`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `discount` (
+  `DiscountId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `Title` varchar(96) DEFAULT NULL COMMENT '活动的标题',
+  `Turn` bigint(20) NOT NULL COMMENT '顺序',
+  `DiscountType` bigint(20) DEFAULT NULL COMMENT '1=单独页面活动,2=正常金额促销,3=正常数量促销',
+  `InProductIds` varchar(1024) DEFAULT NULL COMMENT '参加活动的产品ID集合(已发布的),逗号隔开0=全场',
+  `NeedCount` bigint(20) DEFAULT NULL COMMENT '满多少数量才赠送,比如15',
+  `FreeCount` bigint(20) DEFAULT NULL COMMENT '赠送多少数量,比如1',
+  `Amount1` decimal(20,2) NOT NULL COMMENT '满多少金额才开始赠送',
+  `Amount2` decimal(20,2) NOT NULL COMMENT '金额上限,0表示无上限',
+  `Rate` decimal(20,6) NOT NULL COMMENT '折扣比例,0=按优惠金额算',
+  `FreeAmount` decimal(20,2) DEFAULT NULL COMMENT '直接减多少钱,0=按比例算',
+  `FreeProductIds` varchar(1024) DEFAULT NULL COMMENT '赠送的产品ID集合,逗号隔开,0=全场',
+  `IsView` bit(1) DEFAULT NULL COMMENT 'true=开启,false=关闭',
+  `ImageUrl` varchar(256) DEFAULT NULL COMMENT '规则说明的图片路径',
+  `Description` varchar(256) NOT NULL COMMENT '活动描述',
+  PRIMARY KEY (`DiscountId`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='优惠活动表';
+
+CREATE TABLE `employee` (
+  `EmployeeId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `EmployeeNo` varchar(20) NOT NULL,
+  `EmployeeName` varchar(20) NOT NULL,
+  `LoginNo` varchar(30) NOT NULL COMMENT '，全局唯一，只允许英文和数字',
+  `Password` varchar(40) NOT NULL COMMENT ',MD5',
+  `IsActive` bit(1) NOT NULL COMMENT ',false表示删除或离职',
+  `Mb` varchar(50) DEFAULT NULL,
+  `Email` varchar(100) DEFAULT NULL,
+  `DepartmentId` bigint(20) NOT NULL,
+  `Remark` varchar(200) DEFAULT NULL,
+  `CreateTime` datetime NOT NULL,
+  `PermissionDescription` text DEFAULT NULL,
+  `MenuDescription` text DEFAULT NULL,
+  `RoleDescription` varchar(1024) DEFAULT NULL,
+  `TempCode` varchar(50) DEFAULT NULL,
+  `CompanyId` bigint(20) NOT NULL DEFAULT 1 COMMENT '公司编号',
+  PRIMARY KEY (`EmployeeId`)
+) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `employeeagent` (
+  `EmployeeId` bigint(20) NOT NULL COMMENT '员工',
+  `EmployeeServerId` bigint(20) NOT NULL COMMENT '被委托人',
+  `EmployeeServerName` varchar(50) NOT NULL COMMENT '被委托人名称',
+  `BeginTime` datetime DEFAULT NULL COMMENT '开始时间',
+  `EndTime` datetime DEFAULT NULL COMMENT '结束时间',
+  PRIMARY KEY (`EmployeeId`,`EmployeeServerId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='员工委托人';
+
+CREATE TABLE `employeelog` (
+  `EmployeeLogId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '自动增长',
+  `EmployeeName` varchar(20) DEFAULT NULL COMMENT '员工名称',
+  `EmployeeId` bigint(20) NOT NULL COMMENT '员工编号',
+  `IPAddress` varchar(20) DEFAULT NULL COMMENT '当前操作IP地址',
+  `OperateType` varchar(20) DEFAULT NULL COMMENT '操作类型(Add 新增 Delete 删除 Modify 更改 Login 登陆 等)',
+  `SourceId` bigint(20) DEFAULT NULL COMMENT '来源ID(一般是当前操作数据ID)',
+  `SourceType` int(11) DEFAULT NULL COMMENT '来源类型(一般是当前操作的表名)',
+  `SourceCode` varchar(20) DEFAULT NULL COMMENT '来源编号',
+  `CreateTime` datetime NOT NULL COMMENT '记录添加时间',
+  `Description` varchar(512) NOT NULL COMMENT '说明',
+  `CompanyId` varchar(50) NOT NULL DEFAULT ',1,' COMMENT '公司编号',
+  PRIMARY KEY (`EmployeeLogId`)
+) ENGINE=InnoDB AUTO_INCREMENT=16583 DEFAULT CHARSET=utf8 COMMENT='员工操作日志';
+
+CREATE TABLE `info` (
+  `InfoId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `InfoCategaryId` bigint(20) NOT NULL,
+  `Title` varchar(100) NOT NULL,
+  `Summary` varchar(500) NOT NULL,
+  `Content` text DEFAULT NULL,
+  `MainImage` varchar(500) DEFAULT NULL COMMENT 'Url',
+  `CreateTime` datetime NOT NULL,
+  `IsPublish` bit(1) NOT NULL,
+  `PublishTime` datetime NOT NULL,
+  `VisitCount` bigint(20) NOT NULL,
+  `Turn` bigint(20) NOT NULL COMMENT '数字越大越排前，数字相同则按创建时间降序',
+  `EmployeeId` bigint(20) NOT NULL,
+  PRIMARY KEY (`InfoId`)
+) ENGINE=InnoDB AUTO_INCREMENT=108 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `ininvoice` (
+  `InInvoiceId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `InInvoiceNo` varchar(16) DEFAULT NULL COMMENT '票据号',
+  `EmployeeName` varchar(20) NOT NULL,
+  `EmployeeId` bigint(20) NOT NULL,
+  `BillDateTime` datetime DEFAULT NULL COMMENT '开票时间',
+  `PurchaseOrderIdList` varchar(100) DEFAULT NULL COMMENT '采购主键集合',
+  `PurchaseOrderNoList` varchar(100) DEFAULT NULL COMMENT '采购订单号集合',
+  `ProductInStoreIdList` varchar(100) DEFAULT NULL COMMENT '入库单号集合',
+  `ProviderId` bigint(20) NOT NULL COMMENT '供应商编号',
+  `ProviderName` varchar(50) NOT NULL COMMENT '供应商名称',
+  `CompanyName` varchar(50) NOT NULL COMMENT '供应商抬头',
+  `Status` int(11) NOT NULL COMMENT '发票状态',
+  `CreateId` bigint(20) NOT NULL COMMENT '创建人/申请人,如果为0就是客户自己申请的',
+  `CreateTime` datetime NOT NULL COMMENT '创建时间',
+  `IsInvalid` bit(1) NOT NULL DEFAULT b'0' COMMENT '是否作废',
+  `TotalAmount` decimal(21,2) NOT NULL COMMENT '含税总金额',
+  `InvoiceImage` varchar(200) DEFAULT NULL,
+  `Remark` varchar(100) DEFAULT NULL,
+  `CompanyId` varchar(50) NOT NULL DEFAULT '1' COMMENT '公司编号',
+  PRIMARY KEY (`InInvoiceId`)
+) ENGINE=InnoDB AUTO_INCREMENT=493 DEFAULT CHARSET=utf8 COMMENT='来票管理';
+
+CREATE TABLE `invoice` (
+  `InvoiceId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `InvoiceNo` varchar(32) DEFAULT NULL COMMENT '票据号',
+  `EmployeeName` varchar(20) NOT NULL,
+  `EmployeeId` bigint(20) NOT NULL,
+  `BillDateTime` datetime DEFAULT NULL COMMENT '开票时间',
+  `SalesOrderIdList` varchar(100) DEFAULT NULL COMMENT '订单主键集合',
+  `SalesOrderNoList` varchar(100) DEFAULT NULL COMMENT '订单号集合',
+  `ProductOutStoreIdList` varchar(100) DEFAULT NULL COMMENT '出货单号集合',
+  `CustomerId` bigint(20) NOT NULL COMMENT '客户编号',
+  `CustomerName` varchar(50) NOT NULL COMMENT '客户名称',
+  `CompanyName` varchar(50) NOT NULL COMMENT '公司抬头',
+  `FaxNo` varchar(50) NOT NULL,
+  `Address` varchar(200) DEFAULT NULL,
+  `BankNo` varchar(50) DEFAULT NULL,
+  `Delegate` varchar(200) DEFAULT NULL COMMENT '委托协议图片路径',
+  `BankName` varchar(50) DEFAULT NULL,
+  `Phone` varchar(50) DEFAULT NULL,
+  `ReceiveName` varchar(32) DEFAULT NULL COMMENT '收件人',
+  `ReceiveAddress` varchar(128) DEFAULT NULL COMMENT '收件地址',
+  `Status` int(11) NOT NULL COMMENT '发票状态',
+  `ExpressNo` varchar(20) DEFAULT NULL,
+  `ExpressName` varchar(20) DEFAULT NULL,
+  `Remark` varchar(128) DEFAULT NULL,
+  `CreateId` bigint(20) NOT NULL COMMENT '创建人/申请人,如果为0就是客户自己申请的',
+  `CreateTime` datetime NOT NULL COMMENT '创建时间',
+  `IsInvalid` bit(1) NOT NULL DEFAULT b'0' COMMENT '是否作废',
+  `TotalAmount` decimal(21,2) NOT NULL COMMENT '含税总金额',
+  `CompanyId` varchar(50) NOT NULL DEFAULT '1' COMMENT '公司编号',
+  PRIMARY KEY (`InvoiceId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1756 DEFAULT CHARSET=utf8 COMMENT='发票管理';
+
+CREATE TABLE `list` (
+  `ListId` bigint(20) NOT NULL,
+  `ListName` varchar(50) NOT NULL,
+  `Description` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`ListId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `product` (
+  `ProductId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `ProductNo` varchar(30) NOT NULL,
+  `ProductName` varchar(100) NOT NULL,
+  `CategoryId` bigint(20) DEFAULT NULL COMMENT '产品类别',
+  `Moq` bigint(20) NOT NULL,
+  `Unit` varchar(10) NOT NULL COMMENT '标准',
+  `ProductTypeId` bigint(20) NOT NULL,
+  `EmployeeId` bigint(20) NOT NULL,
+  `UpdateTime` datetime NOT NULL,
+  `ImageUrl` varchar(200) NOT NULL,
+  `ImageUrlThumbnail` varchar(200) NOT NULL,
+  `IsCustomize` bit(1) DEFAULT b'0',
+  `BrandId` bigint(20) NOT NULL DEFAULT 0,
+  `FrontMoney` decimal(21,6) DEFAULT 0.000000,
+  `BrandName` varchar(50) DEFAULT NULL,
+  `SaleTypeId` bigint(20) DEFAULT 0,
+  `Feature` varchar(50) DEFAULT '0',
+  `IsView` bit(1) NOT NULL DEFAULT b'1',
+  PRIMARY KEY (`ProductId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1285 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `shoppingcart` (
+  `ShoppingCartId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `CustomerId` bigint(20) NOT NULL,
+  `ProductBoardPubId` bigint(20) NOT NULL,
+  `Quantity` decimal(20,6) NOT NULL,
+  `CreateTime` datetime NOT NULL,
+  `IsVeneer` bit(1) NOT NULL DEFAULT b'0' COMMENT '是否贴面',
+  `ProductVeneerId` bigint(20) DEFAULT NULL COMMENT '所用贴面纸',
+  `IsSingleVeneer` bit(1) DEFAULT NULL COMMENT '是否单贴',
+  `VeneerType` int(11) DEFAULT 0 COMMENT '贴面类型',
+  PRIMARY KEY (`ShoppingCartId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1490 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `shoppingcartservice` (
+  `ServiceId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `ShoppingCartId` bigint(20) NOT NULL,
+  `SourceType` int(11) NOT NULL,
+  `SourceId` bigint(20) NOT NULL,
+  `ServiceName` varchar(50) NOT NULL COMMENT '服务名称',
+  `Title` varchar(50) DEFAULT NULL COMMENT '标题',
+  `ThumnailImage` varchar(128) DEFAULT NULL,
+  `Quantity` int(11) NOT NULL,
+  `Price` decimal(21,2) NOT NULL COMMENT '单价',
+  `Amount` decimal(21,2) NOT NULL COMMENT '金额',
+  PRIMARY KEY (`ServiceId`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COMMENT='商品的附加服务信息';
+
