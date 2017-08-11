@@ -1,0 +1,16 @@
+INSERT INTO `spermission` VALUES ('1', 0, '编辑产品', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('10', 0, '下单时修改单价', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('11', 0, '审核订单', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('12', 0, '对未发布产品下单', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('13', 0, '取消出入库单', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('14', 0, '修改已入库单价格', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('15', 0, '修改已出库单价格', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('16', 0, '设置白条额度', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('2', 0, '上传订单水单', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('3', 0, '修改个人资料', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('4', 0, '管理全部仓库', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('5', 0, '管理全部入库单', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('6', 0, '管理全部出库单', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('7', 0, '管理全部客户', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('8', 0, '管理全部订单', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `spermission` VALUES ('9', 0, '查看详细客户以及资金', 1, '0', '', ' ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);

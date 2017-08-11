@@ -1,0 +1,15 @@
+INSERT INTO `logisticsshorter` VALUES (1, 330521, '浙江省湖州市德清县', 1, '16轮大卡车', 1, 100, 0, '2017-2-20 14:03:10', 47, '');
+INSERT INTO `logisticsshorter` VALUES (2, 330521, '浙江省湖州市德清县', 2, '9米6', 0, 200, 600, '2017-2-20 14:06:11', 47, '');
+INSERT INTO `logisticsshorter` VALUES (3, 330521101, '浙江省湖州市德清县乾元镇', 5, '6.8米', 30, NULL, 400, '2017-2-23 11:17:54', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (4, 330521101, '浙江省湖州市德清县乾元镇', 5, '6.8米', 40, NULL, 480, '2017-2-23 11:21:42', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (5, 330521101, '浙江省湖州市德清县乾元镇', 5, '6.8米', 50, NULL, 560, '2017-2-23 11:27:34', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (6, 330521101, '浙江省湖州市德清县乾元镇', 5, '6.8米', 60, NULL, 660, '2017-2-23 11:28:03', 57, '');
+INSERT INTO `logisticsshorter` VALUES (7, 330521101, '浙江省湖州市德清县乾元镇', 5, '6.8米', 60, NULL, 640, '2017-2-23 11:38:33', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (8, 330521101, '浙江省湖州市德清县乾元镇', 5, '6.8米', 70, NULL, 720, '2017-2-23 13:21:03', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (9, 330521101, '浙江省湖州市德清县乾元镇', 5, '6.8米', 80, NULL, 800, '2017-2-23 13:21:33', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (10, 330521101, '浙江省湖州市德清县乾元镇', 6, '9.6米', 30, NULL, 600, '2017-2-23 13:23:54', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (11, 330521101, '浙江省湖州市德清县乾元镇', 6, '9.6米', 40, NULL, 700, '2017-2-23 13:28:11', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (12, 330521101, '浙江省湖州市德清县乾元镇', 6, '9.6米', 50, NULL, 800, '2017-2-23 13:28:48', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (13, 330521101, '浙江省湖州市德清县乾元镇', 6, '9.6米', 50, NULL, 800, '2017-2-23 13:30:50', 57, '');
+INSERT INTO `logisticsshorter` VALUES (14, 330521101, '浙江省湖州市德清县乾元镇', 6, '9.6米', 60, NULL, 900, '2017-2-23 13:31:26', 57, '\0');
+INSERT INTO `logisticsshorter` VALUES (15, 330521101, '浙江省湖州市德清县乾元镇', 6, '9.6米', 70, NULL, 1000, '2017-2-23 13:31:52', 57, '\0');

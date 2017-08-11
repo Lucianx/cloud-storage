@@ -1,0 +1,17 @@
+INSERT INTO `department` VALUES (1, '10006', '采购部', 3, 0, 0, 0, 0, '', '', ',1,');
+INSERT INTO `department` VALUES (2, '10005', '销售部', 0, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (3, '10004', '行政部', 0, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (4, '10003', '德清片区', 2, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (5, '10002', '上海片区', 2, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (8, '10001', '仓管部', 0, 0, 0, 0, 0, '', '', ',1,');
+INSERT INTO `department` VALUES (9, '10008', '苏州片区', 2, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (10, '10007', '财务部', 0, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (11, '10009', '黄岩片区', 2, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (12, '10010', '国际贸易部', 2, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (13, '10011', '客服部', 2, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (14, '10012', '销售本部', 2, 0, 0, 0, 0, '', NULL, ',1,');
+INSERT INTO `department` VALUES (16, '20006', '采购部', 3, 0, 0, 0, 0, '', '', ',2,');
+INSERT INTO `department` VALUES (17, '20005', '销售部', 0, 0, 0, 0, 0, '', NULL, ',2,');
+INSERT INTO `department` VALUES (18, '20004', '行政部', 0, 0, 0, 0, 0, '', NULL, ',2,');
+INSERT INTO `department` VALUES (19, '20001', '仓管部', 0, 0, 0, 0, 0, '', '', ',2,');
+INSERT INTO `department` VALUES (20, '20007', '财务部', 0, 0, 0, 0, 0, '', NULL, ',2,');

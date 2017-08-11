@@ -1,0 +1,1 @@
+INSERT INTO `customerrebate` VALUES (1, 21, 50000.000000, 1, '2015-11-24 15:47:57');

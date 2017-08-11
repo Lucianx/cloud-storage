@@ -1,0 +1,16 @@
+INSERT INTO `salesorderservice` VALUES (1, 659, 1046, 4, 4, '贴面加工', 'SL10A122E', 26.00, 30, 780.00);
+INSERT INTO `salesorderservice` VALUES (2, 965, 1678, 116, 4, '贴面加工', 'YS银拉丝 1070', 26.00, 80, 2080.00);
+INSERT INTO `salesorderservice` VALUES (3, 966, 1679, 121, 4, '贴面加工', 'YS棕浅斑马 1053', 26.00, 85, 2210.00);
+INSERT INTO `salesorderservice` VALUES (4, 1885, 3264, 1, 4, '单面单贴', 'SL10A059A', 13.00, 30, 390.00);
+INSERT INTO `salesorderservice` VALUES (5, 2076, 3591, 6, 4, '双贴正面', 'SL10A217TL-2', 13.00, 280, 3640.00);
+INSERT INTO `salesorderservice` VALUES (6, 2076, 3591, 6, 4, '双贴反面', 'SL10A217TL-2', 13.00, 280, 3640.00);
+INSERT INTO `salesorderservice` VALUES (7, 2076, 3592, 3, 4, '单面单贴', 'SL10A113B-1', 13.00, 60, 780.00);
+INSERT INTO `salesorderservice` VALUES (8, 2076, 3594, 6, 4, '单面单贴', 'SL10A217TL-2', 13.00, 280, 3640.00);
+INSERT INTO `salesorderservice` VALUES (9, 2092, 3656, 107, 4, '单面单贴', 'YS咖啡胡桃 1063', 13.00, 67, 871.00);
+INSERT INTO `salesorderservice` VALUES (10, 2106, 3689, 6, 4, '单面单贴', 'SL10A217TL-2', 13.00, 30, 390.00);
+INSERT INTO `salesorderservice` VALUES (11, 2255, 3957, 121, 4, '单面单贴', 'YS棕浅斑马 1053', 13.00, 67, 871.00);
+INSERT INTO `salesorderservice` VALUES (12, 2255, 3959, 6, 4, '单面单贴', 'SL10A217TL-2', 13.00, 30, 390.00);
+INSERT INTO `salesorderservice` VALUES (13, 2982, 5396, 5, 4, '单面单贴', 'SL10A203A', 13.00, 67, 871.00);
+INSERT INTO `salesorderservice` VALUES (14, 2983, 5397, 120, 4, '单面单贴', 'YS樱桃 1043', 13.00, 240, 3120.00);
+INSERT INTO `salesorderservice` VALUES (15, 2984, 5398, 2, 4, '单面单贴', 'SL10A104A', 13.00, 30, 390.00);
+INSERT INTO `salesorderservice` VALUES (16, 4588, 8286, 6, 4, '单面单贴', 'SL10A217TL-2', 13.00, 50, 650.00);

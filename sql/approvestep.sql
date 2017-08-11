@@ -1,0 +1,10 @@
+INSERT INTO `approvestep` VALUES (1, '部门主管审批', NULL);
+INSERT INTO `approvestep` VALUES (4, '销售总监审批', NULL);
+INSERT INTO `approvestep` VALUES (7, '采购总监审批', NULL);
+INSERT INTO `approvestep` VALUES (10, '运营主管审批', NULL);
+INSERT INTO `approvestep` VALUES (13, '运营总监审批', NULL);
+INSERT INTO `approvestep` VALUES (16, '行政总监审批', NULL);
+INSERT INTO `approvestep` VALUES (17, '财务审批', NULL);
+INSERT INTO `approvestep` VALUES (19, '财务总监审批', NULL);
+INSERT INTO `approvestep` VALUES (22, '总经理审批', NULL);
+INSERT INTO `approvestep` VALUES (25, 'CEO审批', NULL);

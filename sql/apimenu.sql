@@ -1,0 +1,9 @@
+INSERT INTO `apimenu` VALUES (1, '库存查询', 'store.html', 'kccx', 510, 0);
+INSERT INTO `apimenu` VALUES (2, '订单收款', 'orderpayout.html', 'ddkq', 625, 0);
+INSERT INTO `apimenu` VALUES (3, '销售订单', 'orders.html', 'xsdd', 315, 0);
+INSERT INTO `apimenu` VALUES (4, '订单特批', 'orderapproval.html', 'ddtp', 325, 0);
+INSERT INTO `apimenu` VALUES (5, '出库单', 'outstore.html', 'ckd', 520, 0);
+INSERT INTO `apimenu` VALUES (6, '入库单', 'instore.html', 'rkd', 515, 0);
+INSERT INTO `apimenu` VALUES (7, '等待入库', 'waitinstore.html', 'ddrk', 525, 0);
+INSERT INTO `apimenu` VALUES (8, '等待出库', 'waitoutstore.html', 'ddck', 530, 0);
+INSERT INTO `apimenu` VALUES (9, '审批中心', 'approve.html', 'spzx', 130, 0);

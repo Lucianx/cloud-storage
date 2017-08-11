@@ -75,4 +75,4 @@ filter.filters[key][val]
 2017-8-4
 	webstome 破解 汉化 皮肤
 2017-8-9
-	删除分支
+	删除分支 	ocr图片
