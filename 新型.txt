@@ -156,3 +156,49 @@ box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); 四周
 
 
 update_batch   批量跟新
+
+$('#items1').closest('.parent1');
+
+全页面查找		https://www.helloweba.com/view-blog-246.html
+
+
+
+方法一
+var str = "abc";
+if(str.indexOf("bc") != -1){
+}
+方法二
+var str = "abc";
+if(str.search("bc") != -1){}
+方法三
+var str = "abc";
+var reg = new RegExp("^.*bc.*$");
+if(reg.test(str)){}
+方法四
+var str = "abc";
+var reg = new RegExp("^.*bc.*$");
+if(str.match(reg)){}
+
+
+
+Validate(productHouse, ProductHouse_.ProductHouseName);   验证
+
+
+ db简易查询的一种方式
+if (productHouse.AreaId.HasValue) productHouse.AreaName = Func.GetListNameById(productHouse.AreaId.Value, cn);
+
+
+ListItem li = new ListItem();
+li.ListItemId = productHouse.AreaId.Value;
+string areaName = li.ListItemName;
+productHouse.AreaName = areaName;
+
+
+
+return new IframeResult(Url.Action("Edit"), Url.Action("Index"));
+
+DataTable dt = cn.ExecuteDataTable("select *  from ProductStoreDetail  where SourceType = 0  and SourceId = 0  and Direction = 2 order by ProductStoreDetailId desc");
+
+
+
+tab_status			响应式管理模板
