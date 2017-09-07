@@ -1,13 +1,14 @@
 1、
 //全局安装
 npm install -g webpack
-//安装到项目目录
-npm install --save-dev webpack
 
-
-2、
+1、
 //自动化创建package.json文件
 npm init
+
+
+2//安装到项目目录
+npm install --save-dev webpack
 
 
 3、
@@ -28,4 +29,21 @@ main.js-- 放在app文件夹中;
 webpack {entry file} {destination for bundled file}
 
 
-6、
+/////打包js
+5、run $ webpack ./XXX.js bundle.js --colors
+
+
+///打包css
+6、$ npm install css-loader --save 
+   $ npm install css-loader --save-dev
+
+
+   require("./css/style.css");
+   document.write(require("./content.js"));
+7、
+   $ webpack ./entry.js bundle.js --module-bind 'css=style!css'
+
+8、使用 webpack.config.js
+	$ webpack
+	webpack 命令会优先读取项目中的 webpack.config.js 文件
+  

@@ -26,7 +26,7 @@ http://www.cnblogs.com/gamedaybyday/p/6373312.html
 bundler  minifier   vs插件   自动转换app.min 格式
 
 
-自适应
+rem 自适应
 
 seo
 

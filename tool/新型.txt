@@ -202,3 +202,15 @@ DataTable dt = cn.ExecuteDataTable("select *  from ProductStoreDetail  where Sou
 
 
 tab_status			响应式管理模板
+
+linux vim 编辑	（ESC :wq）保存退出 
+
+
+刷新	javascript:location.reload();
+	javascript:history.go(0)
+	javascript:location.replace(location.href);
+
+
+C#中Trim()、TrimStart()、TrimEnd()的用法	去除字符串 的空格
+CurrentEmployee.MenuIds.TrimStart(',').TrimEnd(',')
+
