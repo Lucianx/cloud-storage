@@ -214,3 +214,9 @@ linux vim 编辑	（ESC :wq）保存退出
 C#中Trim()、TrimStart()、TrimEnd()的用法	去除字符串 的空格
 CurrentEmployee.MenuIds.TrimStart(',').TrimEnd(',')
 
+pattern="[A-Za-z]{3}"  input 正则表达式
+
+
+window.location.reload(); 刷新
+重定向到某个页面
+return RedirectToAction(url.Replace("//", "/"));
