@@ -6,3 +6,29 @@ out，用于在方法中返回多余值。（可以理解为让一个方法返回不同的类型值）
 ///
 
 BatchUpdate		批量更新
+
+
+//启动在控制台打印
+System.Diagnostics.Trace.WriteLine("111");
+System.Diagnostics.Debug.WriteLine("222");
+
+
+//后台字符串对比、替换
+var title = pub.Title;
+string str = "E2";
+if (title.Contains("E2")) {
+    int i = title.IndexOf(str);
+    title = title.Replace(str, "定制");
+    //aa = title.Insert(i, bb);
+}
+
+
+查询语
+cn.Select(customer, Customer_.ALL, Customer_.CustomerLevel.CustomerLevelName);
+
+直接
+ QueryExpression query = new QueryExpression();
+ query.EntityType = typeof(CustomerBalance);
+ query.Selects.Add(CustomerBalance_.ALL);
+
+
