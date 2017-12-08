@@ -6,3 +6,34 @@ anjular 插件
 
 
 $broadcast的作用是将事件从父级作用域传播至子级作用域,包括自己。格式如下：$broadcast(eventName,args)
+
+
+自适应
+
+jsonH
+
+
+- filter() 自定义过滤器 
+- directive() 自定义指令 
+- factory() 自定义服务 
+- provider() 
+
+
+
+媒体查询
+
+
+PhoneGap
+
+native app
+
+SEO搜索引擎优化
+
+Backbone
+
+Zepto 
+
+一种数据可视化JS类库，如D3、HighCharts、Echarts等；
+
+
+ionic  UI框架

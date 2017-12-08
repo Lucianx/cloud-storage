@@ -220,3 +220,17 @@ pattern="[A-Za-z]{3}"  input 正则表达式
 window.location.reload(); 刷新
 重定向到某个页面
 return RedirectToAction(url.Replace("//", "/"));
+
+
+
+匹配数字、大小写字母、符号的正则
+^[a-zA-Z0-9`~!@#$%^&*()+-_={}:/?.,;]{6,18}$
+
+
+XX.Trim() 移除字符串两侧的字符（"Hello" 中的 "He" 以及 "World" 中的 "d!"）：
+
+
+//解决 input和button在一行写 高度不一样的问题
+box-sizing: border-box; 
+box-sizing: content-box;
+

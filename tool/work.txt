@@ -78,3 +78,5 @@ filter.filters[key][val]
 	删除分支 	ocr图片
 2017-8-16 
 	邮件
+2017-11-7 
+	微信 登录验证 https://blog.coding.net/blog/techniques-for-authentication-in-angular-js-applications?type=hot

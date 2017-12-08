@@ -5,3 +5,7 @@ Linux		http://www.cnblogs.com/crazylqy/p/5649860.html
 前端库		https://www.awesomes.cn/repos/Applications/frameworks
 
 侧边栏		http://www.htmleaf.com/jQuery/Menu-Navigation/201707034607.html
+
+RequireJS进阶:模块的优化及配置的详解
+	https://segmentfault.com/a/1190000002403806
+
