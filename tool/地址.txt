@@ -5,6 +5,8 @@ http://139.129.55.172/NiuCai.git
 
 http://139.129.55.172/NiuCai.ErpApp.git
 
+http://139.129.55.172/NiuCai.WeChatApp.Express.git –°≥Ã–Ú
+
 baiyf
  123456   git’À∫≈
 
