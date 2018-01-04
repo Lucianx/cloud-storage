@@ -1,0 +1,68 @@
+博客
+学院
+下载
+GitChat
+更多
+
+登录注册
+JavaScript中Trim()，TrimStart()，TrimEnd()的实现
+原创 2011年03月31日 17:18:00 标签：javascript /function /null /c 10769
+[javascript] view plain copy
+//去除字符串头尾空格或指定字符  
+String.prototype.Trim= function(c)  
+{  
+    if(c==null||c=="")  
+    {  
+        var str= this.replace(/^/s*/, '');  
+        var rg = //s/;  
+        var i = str.length;  
+        while (rg.test(str.charAt(--i)));  
+        return str.slice(0, i + 1);  
+    }  
+    else  
+    {  
+        var rg=new RegExp("^"+c+"*");  
+        var str= this.replace(rg, '');  
+        rg = new RegExp(c);  
+        var i = str.length;  
+        while (rg.test(str.charAt(--i)));  
+        return str.slice(0, i + 1);  
+    }  
+}  
+  
+//去除字符串头部空格或指定字符  
+String.prototype.TrimStart = function(c)  
+{  
+    if(c==null||c=="")  
+    {  
+        var str= this.replace(/^/s*/, '');  
+        return str;  
+    }  
+    else  
+    {  
+        var rg=new RegExp("^"+c+"*");  
+        var str= this.replace(rg, '');  
+        return str;  
+    }  
+}  
+  
+//去除字符串尾部空格或指定字符  
+String.prototype.trimEnd = function(c)  
+{  
+    if(c==null||c=="")  
+    {  
+        var str= this;  
+        var rg = //s/;  
+        var i = str.length;  
+        while (rg.test(str.charAt(--i)));  
+        return str.slice(0, i + 1);  
+    }  
+    else  
+    {  
+        var str= this;  
+        var rg = new RegExp(c);  
+        var i = str.length;  
+        while (rg.test(str.charAt(--i)));  
+        return str.slice(0, i + 1);  
+    }  
+}  
