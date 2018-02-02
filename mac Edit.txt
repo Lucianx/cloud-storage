@@ -1,0 +1,9 @@
+安装xcode 提示 请求超时错误：
+	系统偏好设置-网络-高级-DNS -- 点击下面的加号 -- 添加一条DNS : 114.114.114.114
+
+上传APP：
+	打开桌面的Finder-找到Xcode鼠标右键-显示包内容-Contents-Applications-	ApplictaionLoader-选取APP上传
+
+
+https://developer.apple.com
+	Account
