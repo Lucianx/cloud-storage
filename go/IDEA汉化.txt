@@ -1,0 +1,2 @@
+1、下载汉化包网盘
+2、把汉化包里的resources_cn.jar复制到\IntelliJ IDEA 2017\lib目录下

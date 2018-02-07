@@ -1,0 +1,35 @@
+public DataTable GetWaitPayoutOrderDetail(long orderId)
+{
+    var sql =
+        $@"select t0.SalesOrderId,t0.WaitPayAmount,t0.ActualAmount,t0.SalesOrderNo,t0.CustomerId,
+            t1.CustomerName,t2.Balance,t2.BaitiaoLaveAmount,t3.Status from SalesOrder t0 
+            left outer join Customer t1 on t0.CustomerId=t1.CustomerId 
+            left outer join CustomerAccount t2 on t1.CustomerId=t2.CustomerId 
+            left outer join SalesOrderApproval t3 on t0.SalesOrderId=t3.SalesOrderId and t3.IsCancel<>1
+            where t0.SalesOrderId={orderId}";
+    return Execute(cn => cn.ExecuteDataTable(sql));
+}
+
+
+public ProductInStoreModel GetProductInStore(long productInStoreId)
+        {
+            var sql =
+                $@"select t0.CreateTime,t0.SourceId,t0.DeliveryRemark,
+                t0.SourceOrderName,t0.CreateId,t0.OrderDate,
+                t0.IsView,t0.ProductHouseId,t0.EmployeeName,t0.ProductInStoreId,
+                t0.ProductInStoreNo,t0.ProviderName,t0.SourceType,t0.TotalAmount,
+                t0.CreateName,t0.Remark,t0.Status,t0.ProductHouseName,
+                t1.EmployeeIds from ProductInStore t0 
+                left outer join ProductHouse t1 on t0.ProductHouseId=t1.ProductHouseId 
+                where t0.ProductInStoreId=@productInStoreId";
+            var productInStore = Execute(cn => cn.Connection.QueryFirstOrDefault<ProductInStoreModel>(sql, new { productInStoreId }));
+            if (productInStore == null) return null;
+            sql =
+                $@"select t0.ProductInStoreId,t0.ActQuantity,t0.ProductName,t0.Quantity,t0.ProductNo,
+                t0.PackageCount,t0.Remark,t0.Unit,t0.ProductInStoreDetailId,t0.ProviderName from ProductInStoreDetail t0 
+                where t0.ProductInStoreId=@ProductInStoreId";
+            productInStore.Details =
+                Execute(cn => cn.Connection.Query<ProductInStoreDetailModel>(sql, new { productInStore.ProductInStoreId }))
+                    .ToList();
+            return productInStore;
+        }
