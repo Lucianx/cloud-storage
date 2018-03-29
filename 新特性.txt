@@ -1,0 +1,15 @@
+anjular - $q - $q.defer() - 简言之$q服务是AngularJS中自己封装实现的一种Promise实现
+https://www.jianshu.com/p/5dc90b5e62c2
+
+
+
+js - 简单来讲，then 方法就是把原来的回调写法分离出来，在异步操作执行完后，用链式调用的方式执行回调函数
+
+cook()
+.then(eat)
+.then(wash)
+.then(function(data){
+    console.log(data);
+});
+
+http://www.hangge.com/blog/cache/detail_1638.html

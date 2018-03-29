@@ -31,4 +31,9 @@ cn.Select(customer, Customer_.ALL, Customer_.CustomerLevel.CustomerLevelName);
  query.EntityType = typeof(CustomerBalance);
  query.Selects.Add(CustomerBalance_.ALL);
 
+//不安主键查询
+var customers = QuerySingleOrDefault<Customer>(Customer_.LoginNo.TEqual(phone), Customer_.ALL);
+
+//批量更新
+cn.BatchUpdate(new ShoppingCart { CustomerId = newCustomer.CustomerId }, ShoppingCart_.CustomerId.TEqual(customer.CustomerId), ShoppingCart_.CustomerId);
 

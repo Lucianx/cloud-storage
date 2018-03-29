@@ -1,0 +1,11 @@
+微信打开 debugtbs.qq.com 
+
+安装线上TBS内核 或 强制使用系统内核
+
+
+
+
+在添加朋友输入框内输入：recover
+
+
+debugx5.qq.com

@@ -1,0 +1,17 @@
+
+//查询某字段重复的数据
+SELECT * FROM `customer` where LoginNo in (
+SELECT LoginNo FROM `customer` GROUP BY LoginNo HAVING COUNT(LoginNo) > 1
+);
+
+
+，trim(',' from a.CompanyId) 去掉 ‘，’
+
+, concat(g.CompanyName, '-', d.DepartmentName)	用‘-’连接
+
+sum(a.TotalAmount) 计算总和
+
+
+like '%,XXXX,%'	模糊查询
+
+a.OrderDate between @start and @end  之间
