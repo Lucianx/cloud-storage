@@ -1,0 +1,76 @@
+
+        public Customers QueryCustomerLost(int dateTypeId, string keyword)
+        {
+            QueryExpression query = new QueryExpression();
+            query.EntityType = typeof(Customer);
+            query.Selects.Add(Customer_.CustomerId);
+            query.Selects.Add(Customer_.CustomerName);
+            query.Selects.Add(Customer_.CreateTime);
+            query.Selects.Add(Customer_.Mb);
+            query.Selects.Add(Customer_.Employee.EmployeeName);
+            query.Selects.Add(Customer_.CustomerAccount.ALL);
+            query.Wheres.Add(Customer_.IsActive.TEqual(true));
+            query.Wheres.Add(Customer_.CustomerAccount.LastDealDate.TLessThan(DateTime.Now.AddMonths(-dateTypeId)));
+            query.Wheres.Add(Customer_.CustomerAccount.LastDealDate.TGreaterThan(DateTime.Now.AddMonths(-12)));
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                ConditionExpressionCollection c = new ConditionExpressionCollection();
+                c.ConditionRelation = ConditionRelation.Or;
+                c.Add(new ConditionExpression(Customer_.Employee.EmployeeName.ToString(), ConditionOperator.Like, keyword));
+                c.Add(new ConditionExpression(Customer_.Employee.EmployeeName.ToString(), ConditionOperator.Like, keyword));
+                query.Wheres.Add(c);
+            }
+            if (!BusinessFun.ExistPermission(CurrentEmployee, PermissionEnum.GLQBKH))
+            {
+                ConditionExpressionCollection c = new ConditionExpressionCollection();
+                c.ConditionRelation = ConditionRelation.Or;
+                c.Add(new ConditionExpression(Customer_.EmployeeId.ToString(), ConditionOperator.Equal, 0));
+                c.Add(new ConditionExpression(Customer_.EmployeeId.ToString(), ConditionOperator.Equal, CurrentEmployee.EmployeeId));
+                query.Wheres.Add(c);
+            }
+
+            query.PageIndex = 1;
+            query.PageSize = 9999;
+            query.OrderBys.Add(Customer_.CustomerAccount.LastDealDate.Asc);
+            query.ReturnMatchedCount = true;
+            Customers customers = new Customers();
+            return Execute(cn =>
+            {
+                customers.TotalCount = cn.SelectCollection(customers.Items, query);
+
+                if (customers.TotalCount > 0)
+                {
+                    query = new QueryExpression();
+                    query.EntityType = typeof(SalesOrder);
+                    query.Wheres.Add(SalesOrder_.CustomerId.TIn(string.Join(",", customers.Items.Select(d => d.CustomerId))));
+                    query.Wheres.Add(SalesOrder_.Status.TGreaterThanOrEqual(15));
+
+                    query.PageIndex = 1;
+                    query.PageSize = 99999;
+                    query.ReturnMatchedCount = true;
+                    query.Selects.Add(SalesOrder_.Customer.Employee.EmployeeName);
+                    query.Selects.Add(SalesOrder_.SalesOrderId);
+                    query.Selects.Add(SalesOrder_.SalesOrderNo);
+                    query.Selects.Add(SalesOrder_.CustomerId);
+                    query.Selects.Add(SalesOrder_.Status);
+                    query.Selects.Add(SalesOrder_.Customer.CustomerName);
+                    query.Selects.Add(SalesOrder_.ProductHouse.HouseType);
+                    query.Selects.Add(SalesOrder_.ProductHouseId);
+                    query.Selects.Add(SalesOrder_.OrderEmployee.EmployeeName);
+                    query.Selects.Add(SalesOrder_.CreateTime);
+
+                    query.Selects.Add(SalesOrder_.ActualAmount);
+                    query.OrderBys.Add(SalesOrder_.SalesOrderId.Desc);
+                    SalesOrders salesOrders = new SalesOrders();
+                    salesOrders.TotalCount = cn.SelectCollection(salesOrders.Items, query);
+                    foreach (SalesOrder salesOrder in salesOrders.Items)
+                    {
+                        Customer customer = (customers.Items.Where(q => q.CustomerId == salesOrder.CustomerId)).First();
+                        if (customer.SalesOrders == null) customer.SalesOrders = new SalesOrders();
+                        customer.SalesOrders.Items.Add(salesOrder);
+                    }
+                }
+                return customers;
+            });
+
+        }

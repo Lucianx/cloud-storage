@@ -15,3 +15,21 @@ sum(a.TotalAmount) 计算总和
 like '%,XXXX,%'	模糊查询
 
 a.OrderDate between @start and @end  之间
+
+
+常见的几个聚合函数
+
+1、 求个数：count
+
+2、 求总和：sum
+
+3、 求最大值：max
+
+4、 求最小值：min
+
+5、 求平均值：avg
+
+ifnull(t2.QuantityOut,0)  如果t2.QuantityOut为null，t2.QuantityOut = 0；
+
+
+datediff(t2.LastDateOut,t1.LastDateIn)		//计算两个日期之间的时间
