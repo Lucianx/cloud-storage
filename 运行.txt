@@ -1,0 +1,4 @@
+control		控制面板
+mstsc		远程连接
+inetmgr		lls管理器
+dxdiag		win诊断
