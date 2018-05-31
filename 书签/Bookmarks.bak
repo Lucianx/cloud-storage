@@ -1,12 +1,12 @@
 {
-   "checksum": "493c8360e2d1e69fcffd704ab3afb97b",
+   "checksum": "ec685121a51e22ce520e93a3d441214a",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "date_added": "13157451685074098",
             "id": "5",
             "meta_info": {
-               "last_visited_desktop": "13167792787334265"
+               "last_visited_desktop": "13171969818544865"
             },
             "name": "商城-本地",
             "type": "url",
@@ -15,7 +15,7 @@
             "date_added": "13157514515304568",
             "id": "11",
             "meta_info": {
-               "last_visited_desktop": "13170995461793279"
+               "last_visited_desktop": "13171942345793779"
             },
             "name": "MUI-最接近原生APP体验的高性能前端框架",
             "type": "url",
@@ -24,7 +24,7 @@
             "date_added": "13159617392641245",
             "id": "33",
             "meta_info": {
-               "last_visited_desktop": "13167624632728398"
+               "last_visited_desktop": "13172058666269242"
             },
             "name": "商城 - LLS",
             "type": "url",
@@ -33,7 +33,7 @@
             "date_added": "13159511114280675",
             "id": "30",
             "meta_info": {
-               "last_visited_desktop": "13167110017430793"
+               "last_visited_desktop": "13171963387682596"
             },
             "name": "微信 - LLS",
             "type": "url",
@@ -42,7 +42,7 @@
             "date_added": "13157513758256947",
             "id": "10",
             "meta_info": {
-               "last_visited_desktop": "13171022646219174"
+               "last_visited_desktop": "13172029032645724"
             },
             "name": "ERP - 测试",
             "type": "url",
@@ -96,7 +96,7 @@
             "date_added": "13164088505720820",
             "id": "56",
             "meta_info": {
-               "last_visited_desktop": "13168329635812332"
+               "last_visited_desktop": "13172203574100249"
             },
             "name": "微信登录接口 - 第三方登录开发流程详解 - CSDN博客",
             "type": "url",
@@ -335,9 +335,27 @@
             "name": "WebStorm\\IntelliJ IDEA 注册码序列号 - CSDN博客",
             "type": "url",
             "url": "https://blog.csdn.net/suwu150/article/details/57418565"
+         }, {
+            "date_added": "13171344209499668",
+            "id": "105",
+            "meta_info": {
+               "last_visited_desktop": "13171344209499943"
+            },
+            "name": "如何部署在阿里云主机上部署Mysql数据库 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/qq_15267341/article/details/52311129"
+         }, {
+            "date_added": "13171359177914035",
+            "id": "106",
+            "meta_info": {
+               "last_visited_desktop": "13171363813921099"
+            },
+            "name": "颜色_色彩_色板_RGB_CMYK_HSL_渐变色_颜色大全_CSS颜色_专色_Color_All Colors",
+            "type": "url",
+            "url": "http://www.yansedaquan.com/"
          } ],
          "date_added": "13128586049835051",
-         "date_modified": "13171015538690380",
+         "date_modified": "13171359177914035",
          "id": "1",
          "name": "书签栏",
          "type": "folder"
@@ -347,7 +365,7 @@
             "date_added": "13157457905098979",
             "id": "7",
             "meta_info": {
-               "last_visited_desktop": "13164342481968654"
+               "last_visited_desktop": "13172029407323467"
             },
             "name": "商城 - 测试",
             "type": "url",
@@ -356,7 +374,7 @@
             "date_added": "13157457978035457",
             "id": "8",
             "meta_info": {
-               "last_visited_desktop": "13159509857331448"
+               "last_visited_desktop": "13172029427485562"
             },
             "name": "微信 - 测试",
             "type": "url",
@@ -446,7 +464,7 @@
             "date_added": "13158406042801526",
             "id": "28",
             "meta_info": {
-               "last_visited_desktop": "13159591955896870"
+               "last_visited_desktop": "13171687967852975"
             },
             "name": "HTML5+ API Reference",
             "type": "url",
@@ -527,7 +545,7 @@
             "date_added": "13160632629223409",
             "id": "44",
             "meta_info": {
-               "last_visited_desktop": "13171013873963516"
+               "last_visited_desktop": "13172036769119194"
             },
             "name": "macos - VMWare 10 安装 10.9 Mac OS 如何调整分辨率为 1920 * 1200？ - SegmentFault",
             "type": "url",
