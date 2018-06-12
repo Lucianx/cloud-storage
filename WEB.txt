@@ -1,0 +1,2 @@
+获取汉字首字母（插件）
+https://github.com/sxei/pinyinjs.git

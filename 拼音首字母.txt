@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="ChinesePY.js"></script>
+  </head>
+  <body style="font-size:12px">
+    <form>
+      ÊäÈëÄÚÈÝ£º <input type="text" onkeyup="pym.innerHTML = Pinyin.GetJP(this.value);allpym.innerHTML=Pinyin.GetQP(this.value);
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡staffpym.innerHTML=Pinyin.GetHP(this.value);" /> <br /><br />
+      Æ´ Òô Âë£º <span id="pym"></span><br /><br />
+      Æ´ÒôÈ«Âë£º <span id="allpym"></span><br /><br />
+      »ì Æ´ Âë£º <span id="staffpym"></span>
+    </form>
+  </body>
+</html>

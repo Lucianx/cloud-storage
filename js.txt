@@ -1,1 +1,4 @@
 reduce()	计算数组元素相加后的总和：
+
+
+https://segmentfault.com/q/1010000009012380		js获取汉字的拼音首字母
