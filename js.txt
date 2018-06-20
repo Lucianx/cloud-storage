@@ -2,3 +2,19 @@ reduce()	计算数组元素相加后的总和：
 
 
 https://segmentfault.com/q/1010000009012380		js获取汉字的拼音首字母
+
+
+for(var i=0; i<data.Mb.length; i++){
+	var reg = /^[0-9]+.?[0-9]*$/;
+	if(!reg.test(data.Mb[i])){
+		data.Mb = data.Mb.split(data.Mb[i]).join("");
+	}
+}
+
+for(var i= 0; i<data.LoginNo.length; i++){
+	var reg = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>《》/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？+/]");
+	if(reg.test(data.LoginNo[i])){
+		console.log(data.LoginNo[i]);
+		data.LoginNo = data.LoginNo.split(data.LoginNo[i]).join("");
+	}
+}
