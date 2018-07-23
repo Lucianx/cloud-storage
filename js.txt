@@ -18,3 +18,7 @@ for(var i= 0; i<data.LoginNo.length; i++){
 		data.LoginNo = data.LoginNo.split(data.LoginNo[i]).join("");
 	}
 }
+
+
+
+立即执行函数表达式
