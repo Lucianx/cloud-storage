@@ -1,12 +1,12 @@
 {
-   "checksum": "818c94f798aa3ad22f75aa8a71c96323",
+   "checksum": "8e9ba1232317774fa417bcfae87ca80e",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "date_added": "13157451685074098",
             "id": "5",
             "meta_info": {
-               "last_visited_desktop": "13173440321268001"
+               "last_visited_desktop": "13175227822469793"
             },
             "name": "商城-本地",
             "type": "url",
@@ -15,7 +15,7 @@
             "date_added": "13157514515304568",
             "id": "11",
             "meta_info": {
-               "last_visited_desktop": "13172737890093394"
+               "last_visited_desktop": "13175334581125110"
             },
             "name": "MUI-最接近原生APP体验的高性能前端框架",
             "type": "url",
@@ -24,7 +24,7 @@
             "date_added": "13159617392641245",
             "id": "33",
             "meta_info": {
-               "last_visited_desktop": "13173854207885863"
+               "last_visited_desktop": "13176527713215560"
             },
             "name": "商城 - LLS",
             "type": "url",
@@ -33,7 +33,7 @@
             "date_added": "13159511114280675",
             "id": "30",
             "meta_info": {
-               "last_visited_desktop": "13173859497204660"
+               "last_visited_desktop": "13175334377413495"
             },
             "name": "微信 - LLS",
             "type": "url",
@@ -42,7 +42,7 @@
             "date_added": "13157513758256947",
             "id": "10",
             "meta_info": {
-               "last_visited_desktop": "13173846788781814"
+               "last_visited_desktop": "13176885793641895"
             },
             "name": "ERP - 测试",
             "type": "url",
@@ -60,7 +60,7 @@
             "date_added": "13162010228507068",
             "id": "51",
             "meta_info": {
-               "last_visited_desktop": "13172572622202138"
+               "last_visited_desktop": "13175334552242405"
             },
             "name": "mui 关于闪屏问题的一些总结_HBuilder教程_B5教程网",
             "type": "url",
@@ -69,7 +69,7 @@
             "date_added": "13164084286770935",
             "id": "53",
             "meta_info": {
-               "last_visited_desktop": "13173414371255274"
+               "last_visited_desktop": "13175849719255167"
             },
             "name": "微信开放平台",
             "type": "url",
@@ -78,7 +78,7 @@
             "date_added": "13164085673818214",
             "id": "54",
             "meta_info": {
-               "last_visited_desktop": "13173410727608070"
+               "last_visited_desktop": "13175933127365797"
             },
             "name": "资源中心 - 微信开放平台",
             "type": "url",
@@ -87,7 +87,7 @@
             "date_added": "13164087758496599",
             "id": "55",
             "meta_info": {
-               "last_visited_desktop": "13173437041202379"
+               "last_visited_desktop": "13176877388695166"
             },
             "name": "微信公众平台",
             "type": "url",
@@ -96,7 +96,7 @@
             "date_added": "13164088505720820",
             "id": "56",
             "meta_info": {
-               "last_visited_desktop": "13173161123587772"
+               "last_visited_desktop": "13176464215244205"
             },
             "name": "微信登录接口 - 第三方登录开发流程详解 - CSDN博客",
             "type": "url",
@@ -105,7 +105,7 @@
             "date_added": "13164100454538745",
             "id": "57",
             "meta_info": {
-               "last_visited_desktop": "13165481336395547"
+               "last_visited_desktop": "13176800057254472"
             },
             "name": "网站使用微信登录接口，所踩的坑... - CSDN博客",
             "type": "url",
@@ -114,7 +114,7 @@
             "date_added": "13164108317910573",
             "id": "58",
             "meta_info": {
-               "last_visited_desktop": "13173431993001132"
+               "last_visited_desktop": "13175923919494195"
             },
             "name": "UrlEncode编码/UrlDecode解码 - 站长工具",
             "type": "url",
@@ -123,7 +123,7 @@
             "date_added": "13164109987469795",
             "id": "59",
             "meta_info": {
-               "last_visited_desktop": "13165294738752567"
+               "last_visited_desktop": "13176783193396502"
             },
             "name": "两种方式判断访问终端是否是微信浏览器 - ThinkPHP框架",
             "type": "url",
@@ -366,7 +366,7 @@
             "date_added": "13172556475440476",
             "id": "110",
             "meta_info": {
-               "last_visited_desktop": "13173245931593490"
+               "last_visited_desktop": "13174732376915603"
             },
             "name": "AngularJS ngBind - 绑定 HTML 元素到应用程序数据",
             "type": "url",
@@ -393,7 +393,7 @@
             "date_added": "13173343575246512",
             "id": "116",
             "meta_info": {
-               "last_visited_desktop": "13173344525574419"
+               "last_visited_desktop": "13176877410953541"
             },
             "name": "微信公众平台接口调试工具",
             "type": "url",
@@ -443,9 +443,270 @@
             "name": "使用C# .net开发微信公众号之获取模板ID - CSDN博客",
             "type": "url",
             "url": "https://blog.csdn.net/qq_31583959/article/details/52168704"
+         }, {
+            "date_added": "13173932245342455",
+            "id": "124",
+            "meta_info": {
+               "last_visited_desktop": "13173932275352916"
+            },
+            "name": "Google Chrome 64-bit",
+            "type": "url",
+            "url": "https://www.chrome64bit.com/"
+         }, {
+            "date_added": "13174725685704683",
+            "id": "126",
+            "meta_info": {
+               "last_visited_desktop": "13175330331474791"
+            },
+            "name": "WEB前端开发面试题 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/juandaisy/article/details/62440819"
+         }, {
+            "date_added": "13174731959637430",
+            "id": "127",
+            "meta_info": {
+               "last_visited_desktop": "13174732314781148"
+            },
+            "name": "js中几种实用的跨域方法原理详解 - 无双 - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/2050/p/3191744.html"
+         }, {
+            "date_added": "13175076023125329",
+            "id": "129",
+            "meta_info": {
+               "last_visited_desktop": "13175334515875324"
+            },
+            "name": "前端性能优化方法总结 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/w2326ice/article/details/64122372"
+         }, {
+            "date_added": "13175157816186672",
+            "id": "131",
+            "meta_info": {
+               "last_visited_desktop": "13175157816186846"
+            },
+            "name": "系列篇 给ofo共享单车撸一个小程序 - 简书",
+            "type": "url",
+            "url": "https://www.jianshu.com/p/68e3b8927a77"
+         }, {
+            "date_added": "13175241866984895",
+            "id": "133",
+            "meta_info": {
+               "last_visited_desktop": "13175330566955194"
+            },
+            "name": "h5 手机屏幕适配—REM - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/jill6693484/article/details/53445192"
+         }, {
+            "date_added": "13175597985361990",
+            "id": "135",
+            "meta_info": {
+               "last_visited_desktop": "13175598370326429"
+            },
+            "name": "实时聊天 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/qq_35232718/article/details/53243372"
+         }, {
+            "date_added": "13175598604239460",
+            "id": "136",
+            "meta_info": {
+               "last_visited_desktop": "13176195329926974"
+            },
+            "name": "c#基于socket编程实现简单多人聊天程序 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/qq_32623363/article/details/72887920"
+         }, {
+            "date_added": "13175682344398642",
+            "id": "138",
+            "meta_info": {
+               "last_visited_desktop": "13175744332051032"
+            },
+            "name": "C#微信公众号——消息处理 - 高空燕子飞过 - 博客园",
+            "type": "url",
+            "url": "http://www.cnblogs.com/zhangjd/p/5701265.html"
+         }, {
+            "date_added": "13175682592829341",
+            "id": "139",
+            "meta_info": {
+               "last_visited_desktop": "13175744336183113"
+            },
+            "name": "C#微信公众号全攻略（4）--实现回复消息C#代码 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/coldwind811201/article/details/65633130"
+         }, {
+            "date_added": "13175762411136677",
+            "id": "141",
+            "meta_info": {
+               "last_visited_desktop": "13175762411136979"
+            },
+            "name": "基于WebSocket的网页端即时通讯技术 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/u014427391/article/details/54093181/"
+         }, {
+            "date_added": "13175857953540090",
+            "id": "143",
+            "meta_info": {
+               "last_visited_desktop": "13175857953540637"
+            },
+            "name": "从剪切板粘贴图片上传 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/chenmoquan/article/details/50899722"
+         }, {
+            "date_added": "13175859000786599",
+            "id": "144",
+            "meta_info": {
+               "last_visited_desktop": "13175859000786802"
+            },
+            "name": "H5微信聊天案例、html5+css3仿微信聊天界面对话框 微信红包-打赏-霸屏 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/xiaoyan_2015/article/details/73860994"
+         }, {
+            "date_added": "13175859259858238",
+            "id": "145",
+            "meta_info": {
+               "last_visited_desktop": "13175859259858439"
+            },
+            "name": "怎么用html5+js实现类似微信聊天的功能，可以发文字，表情，图片，语音？-CSDN论坛",
+            "type": "url",
+            "url": "https://bbs.csdn.net/topics/392014349"
+         }, {
+            "date_added": "13175859964724580",
+            "id": "146",
+            "meta_info": {
+               "last_visited_desktop": "13176177507889684"
+            },
+            "name": "网页聊天框发送表情图片实现方法 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/yifan_lion/article/details/79968367"
+         }, {
+            "date_added": "13175921931444654",
+            "id": "148",
+            "meta_info": {
+               "last_visited_desktop": "13176199061665494"
+            },
+            "name": "微信公众号平台接口开发：发送客服消息 - 蓝建荣 - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/lanxiaoke/p/6413194.html"
+         }, {
+            "date_added": "13175922165932771",
+            "id": "149",
+            "meta_info": {
+               "last_visited_desktop": "13176198989893247"
+            },
+            "name": "微信公众号API使用总结 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/jiawenbo89/article/details/50442024"
+         }, {
+            "date_added": "13175939956545134",
+            "id": "150",
+            "meta_info": {
+               "last_visited_desktop": "13176522965031055"
+            },
+            "name": "微信公众平台修改服务器配置时token验证失败-CSDN论坛",
+            "type": "url",
+            "url": "https://bbs.csdn.net/topics/390991193"
+         }, {
+            "date_added": "13176200387459766",
+            "id": "152",
+            "meta_info": {
+               "last_visited_desktop": "13176539537204562"
+            },
+            "name": "微信公众号开发--接收与回复消息（Java） - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/frankcheng5143/article/details/50543394"
+         }, {
+            "date_added": "13176201579838916",
+            "id": "153",
+            "meta_info": {
+               "last_visited_desktop": "13176522958340366"
+            },
+            "name": ".net微信公众号开发——消息与事件 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/xrwang/article/details/44202991"
+         }, {
+            "date_added": "13176206344783831",
+            "id": "154",
+            "meta_info": {
+               "last_visited_desktop": "13176350069153099"
+            },
+            "name": "解决“当前扩展缓存策略没有进行注册”的错误 - SZW - 博客园",
+            "type": "url",
+            "url": "http://www.cnblogs.com/szw/p/9265828.html"
+         }, {
+            "date_added": "13176206972656211",
+            "id": "155",
+            "meta_info": {
+               "last_visited_desktop": "13176522978205723"
+            },
+            "name": "PublicAccount/RequestMessage/RequestMessageHelper.cs · xrwang/xrwang.weixin.PublicAccount - 码云 Gitee.com",
+            "type": "url",
+            "url": "https://gitee.com/xrwang2/xrwang.weixin.PublicAccount/blob/master/PublicAccount/RequestMessage/RequestMessageHelper.cs"
+         }, {
+            "date_added": "13176374565177140",
+            "id": "157",
+            "meta_info": {
+               "last_visited_desktop": "13176374565177371"
+            },
+            "name": "Fiddler是最强大最好用的Web调试工具之一--网站抓包分析 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/linybo/article/details/44999123"
+         }, {
+            "date_added": "13176464479088110",
+            "id": "159",
+            "meta_info": {
+               "last_visited_desktop": "13176464479088542"
+            },
+            "name": "微信公众平台-接收消息与发送被动消息 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/ahywg/article/details/37876665"
+         }, {
+            "date_added": "13176527421192128",
+            "id": "162",
+            "meta_info": {
+               "last_visited_desktop": "13176538235792899"
+            },
+            "name": "IIS 发布网站到外网 - FightLi - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/FightLi/p/5470071.html"
+         }, {
+            "date_added": "13176540481793273",
+            "id": "163",
+            "meta_info": {
+               "last_visited_desktop": "13176540654541096"
+            },
+            "name": "Content-Encoding设置为utf-8和application/json的区别-CSDN论坛",
+            "type": "url",
+            "url": "https://bbs.csdn.net/topics/392086885?list=lz"
+         }, {
+            "date_added": "13176542895050364",
+            "id": "164",
+            "meta_info": {
+               "last_visited_desktop": "13176542895050571"
+            },
+            "name": "C#微信公众号——消息处理-布布扣-bubuko.com",
+            "type": "url",
+            "url": "http://www.bubuko.com/infodetail-1679928.html"
+         }, {
+            "date_added": "13176551875151769",
+            "id": "165",
+            "meta_info": {
+               "last_visited_desktop": "13176789162158399"
+            },
+            "name": "dotNet微信公众号开发二:接收并回复普通文字消息 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/xue251248603/article/details/51031145"
+         }, {
+            "date_added": "13176799509049203",
+            "id": "167",
+            "meta_info": {
+               "last_visited_desktop": "13176799509049701"
+            },
+            "name": "服务器配置和自定义菜单有冲突？-CSDN论坛",
+            "type": "url",
+            "url": "https://bbs.csdn.net/topics/391039689"
          } ],
          "date_added": "13128586049835051",
-         "date_modified": "13173352842371711",
+         "date_modified": "13176800340111039",
          "id": "1",
          "name": "书签栏",
          "type": "folder"
@@ -644,7 +905,7 @@
             "date_added": "13160645880459543",
             "id": "45",
             "meta_info": {
-               "last_visited_desktop": "13170995422554993"
+               "last_visited_desktop": "13174972816551779"
             },
             "name": "iOS证书(.p12)和描述文件(.mobileprovision)申请 - DCloud问答",
             "type": "url",
@@ -676,9 +937,27 @@
             "name": "Animate.css",
             "type": "url",
             "url": "https://daneden.github.io/animate.css/?"
+         }, {
+            "date_added": "13176800340111039",
+            "id": "168",
+            "meta_info": {
+               "last_visited_desktop": "13176807430819782"
+            },
+            "name": ".net mvc 微信公众号 自定义菜单 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/chiyueqi/article/details/52611569"
+         }, {
+            "date_added": "13176800783413692",
+            "id": "169",
+            "meta_info": {
+               "last_visited_desktop": "13176807426019698"
+            },
+            "name": "怎么在微信公众号使用ASP.net开发自定义菜单 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/wendykui/article/details/59491865"
          } ],
          "date_added": "13128586049835056",
-         "date_modified": "13162010228507068",
+         "date_modified": "13176800783413692",
          "id": "2",
          "name": "其他书签",
          "type": "folder"
