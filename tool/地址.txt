@@ -40,5 +40,3 @@ http://blog.csdn.net/yongh701/article/details/70597982
 
 https://jingyan.baidu.com/article/2a13832884ad9b074a134f33.html
 
-
-npm install -g tmodjs

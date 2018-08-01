@@ -1,0 +1,11 @@
+webstorm激活网站
+ http://hb5.s.osidea.cc:1017
+
+*****重要 idea
+
+http://www.itmayun.com/it/files/1/article/645855999527987/1.html
+
+
+
+1、下载汉化包网盘
+2、把汉化包里的resources_cn.jar复制到\IntelliJ IDEA 2017\lib目录下

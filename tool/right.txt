@@ -1,3 +1,0 @@
-TypeScript	
-
-CommonJS是一种规范	
