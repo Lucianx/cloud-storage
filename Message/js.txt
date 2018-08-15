@@ -22,3 +22,6 @@ for(var i= 0; i<data.LoginNo.length; i++){
 
 
 立即执行函数表达式
+
+
+JS刷新页面后滚动条的位置不变
